@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+      // Função para calcular o reajuste salarial
+      function calcularReajuste(nome, salario) {
+    var reajuste = salario * (10 / 100);
+    var salarioAjustado = salario + reajuste;
+    return `Olá, ${nome}! Seu salário ajustado é: R$ ${salarioAjustado.toFixed(2)}`;
+}
+
+const nomesalario = calcularReajuste("Lucas", 2500);
+console.log(nomesalario);
+
+    </script>
+    
+</body>
+</html>
